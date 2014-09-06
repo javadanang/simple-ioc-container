@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans>
+    <bean id="storeService" class="net.acegik.simpleioccontainer.StoreService">
+        <property name="name" value="Foo and Bar Company" />
+        <property name="repository" ref="storeRepository" />
+    </bean>
+    <bean id="storeRepository" class="net.acegik.simpleioccontainer.StoreRepository" />
+</beans>
